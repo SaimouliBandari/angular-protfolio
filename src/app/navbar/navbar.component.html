@@ -15,7 +15,7 @@
             <div class="ms-auto navbar-nav">
                 <ul class="navbar-nav ms-3" *ngFor="let icon of icons">
                     <li class="nav-item">
-                        <a class="nav-link">
+                        <a class="nav-link" routerLink="{{icon.name.toLowerCase()}}" routerLinkActive="active">
                             <fa-icon [icon]="icon.icon"></fa-icon>
                             {{icon.name}}
                         </a>

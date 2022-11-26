@@ -1,71 +1,110 @@
+
 *{
     font-family:monospace;
-    color: white;
+}
+
+@media screen and (max-width: 1030px) {
+    img{
+        max-width: 500px;
+        width: 100% !important;
+    }
+    .img-col{
+        display: flex;
+        justify-content: center;
+        .center-div{
+           
+            align-self:flex-end;
+        }
+    }
     
-    .welcome{
-       
-        max-height: 25%;
-        .wtext{
-            font-size:150px;
-            text-align: center;
-            width: fit-content;
+}
+
+@media screen and (min-width : 1030px) and (max-width: 1440px) {
+    .img-col{
+        display: flex;
+        justify-content: center;
+        .center-div{
+            align-self: center;
+        }
+        .center-div-abt{
+            align-self: center;
+        }
+    }
+    img{
+        max-width: 300px;
+    }
+}
+
+
+.welcome{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+        .underline-aff{
             background-image: linear-gradient(90deg, red, blue, yellow);
-    
             background-size: 0% 3px;
             background-repeat: no-repeat;
-            background-position: center bottom;
-            transition: background-size ease-out 700ms;
-        }
-        .wtext:hover{
-            background-size: 100% 4px;
-        }
-       
-        
-    }
-    .row{
-        min-height: 500x;
-    }
+            background-position:bottom left;
+            transition: background-size ease-in 700ms;
+            width: fit-content;
 
-    img{
-        width: 300px;;
-    }
-    h4{
-        width: fit-content;
-        background-image:linear-gradient(90deg,yellow,red,blue);
-        background-size: 0% 3px;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        transition: background-size ease-out 700ms;
-    }
-    .min-vh-100{
-        min-height:100%;
-        height: 100%;
-        // background-color: black;
-    }
-}
-.profile{
-    justify-content: center;
+            .wtext{
+                font-size: 15vw;
+                width: fit-content;
+                background: linear-gradient(45deg, purple, yellow, darkblue);
+                background-clip: text;
+                color: transparent;
+                margin-top: 60px;
+                opacity: 0.3;
+                transition: opacity ease-in 1s;
+            }
+        }
+    
+
+        .underline-aff:hover{
+            .wtext{
+                // background: linear-gradient(45deg, purple, yellow, darkblue);
+                // background-clip: text;
+                // color: transparent;
+                opacity: 1;
+            }
+            background-size: 100% 4px;                
+        }
 }
 
-h4:hover{
+
+
+img{
+    min-width: 300px;
+    width: 100%;
+}
+h4{
+    width:fit-content;
+    background-image:linear-gradient(90deg,yellow,red,blue);
     background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size ease-out 700ms;
 }
 
-.hover{
-    width: max-content;
-    border-width: 0px;
-    border-style: solid;
-    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-    transition: border-width ease-in-out 1s;
-    
+.h4-text{
+    height: 50px;
+    overflow: hidden;
+    width: 0%;
+    white-space:nowrap;
+    transition: width ease-in-out 1500ms;
 }
 
-*:hover{
-    .hover{
-        border-width: 4px;
-    }
-    h4{
-        background-size: 100% 3px;
-    }
+#hov-eff-about:hover{
     
+    // h4{
+    //     //width: 100%;
+    //     background-size: 100% 3px;
+    // }
+
+    .h4-text{
+        width: 100%;
+    }
 }
+

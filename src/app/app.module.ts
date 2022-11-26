@@ -7,12 +7,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { BlankPageComponent } from './blank-page/blank-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProjectsPageComponent,
+    BlankPageComponent
   ],
   imports: [
     BrowserModule,

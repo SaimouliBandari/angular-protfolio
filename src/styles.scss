@@ -3,8 +3,9 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-body{
+body,html{
     background-color: rgb(39, 39, 39);
     color: white; 
-    scroll-behavior: initial;
+    height: 100%;
+    margin: 0;
 }
