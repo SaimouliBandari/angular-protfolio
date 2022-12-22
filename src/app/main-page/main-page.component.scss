@@ -3,7 +3,7 @@
     font-family:monospace;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
     img{
         max-width: 500px;
         width: 100% !important;
@@ -19,7 +19,8 @@
     
 }
 
-@media screen and (min-width : 1030px) and (max-width: 1440px) {
+@media screen and (min-width : 1200px) and (max-width: 2560px) {
+    
     .img-col{
         display: flex;
         justify-content: center;
