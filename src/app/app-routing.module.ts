@@ -1,3 +1,4 @@
+import { ResumeComponent } from './resume/resume.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -21,8 +22,8 @@ const routes: Routes = [
     component: BlankPageComponent
   },
   {
-    path: 'portfolio',
-    component: BlankPageComponent
+    path: 'resume',
+    component: ResumeComponent
   },
   {
     path : 'contact',

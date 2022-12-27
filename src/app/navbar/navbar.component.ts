@@ -1,19 +1,27 @@
 import { icons } from './icons';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FaDuotoneIconComponent } from '@fortawesome/angular-fontawesome';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('nav') nav: Element | undefined;
   fa_bars =faBars;
   icons = icons;
-  constructor() { }
+
+  constructor(private location : Location) { }
+
+  pageName = this.location.path(true);
 
   ngOnInit(): void {
+    console.log(this.pageName);
+  }
+
+  ngOnChanges(){
+    
   }
 
 }

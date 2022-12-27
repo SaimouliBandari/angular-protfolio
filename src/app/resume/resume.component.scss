@@ -1,0 +1,61 @@
+* {
+    // font-family:palation;
+    font-family: cursive;
+    // color: rgb(209, 206, 201);
+    font-weight:600;
+    // font-size: 20px;
+}
+
+.resume-margin {
+    width: 570px;
+    // width: 800px;
+    padding-top: 65px;
+    height: 800px;
+
+    // border: 1px solid white;
+    .about-section {
+        height: 277px;
+
+        .details {
+            width: 300px;
+            height: 278px;
+            background-color: rgb(238, 199, 194);
+            color: black !important;
+            font-size: 20px;
+        }
+
+        img {
+            width: 240px;
+            height: 225px;
+            transform: translateX(-100px) translateY(25px);
+        }
+    }
+
+    .bio {
+        padding: 30px;
+
+        .intro {}
+
+        // .work-exp{
+        //     li{
+        //         margin-top: 10px;
+        //     }
+        // }
+    }
+
+
+}
+
+ul {
+    list-style: none;
+
+    li {
+        margin-top: 10px;
+        width: 300px;
+    }
+
+}
+fa-icon{
+    stroke: yellow;
+    color: rgb(255, 239, 63);
+}

@@ -15,7 +15,7 @@ export const icons =[
     },
     {
         "icon" : faFile,
-        "name" : "Portfolio"
+        "name" : "Resume"
     },
     {
         "icon" : faAddressCard,

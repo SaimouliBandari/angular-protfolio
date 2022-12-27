@@ -9,6 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { BlankPageComponent } from './blank-page/blank-page.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BlankPageComponent } from './blank-page/blank-page.component';
     MainPageComponent,
     NavbarComponent,
     ProjectsPageComponent,
-    BlankPageComponent
+    BlankPageComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,

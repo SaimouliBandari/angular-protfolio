@@ -11,9 +11,10 @@ export class MainPageComponent implements OnInit {
     console.log(screen.width)
    }
 
+  display_msg = 'Welcome';
   ngOnInit(): void {
+    setTimeout(() => {
+      this.display_msg = 'null'
+    }, 3010);
   }
-
-
-
 }

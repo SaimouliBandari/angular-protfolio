@@ -1,18 +1,45 @@
 <div class="container-xl">
     <div class=" row min-vh-100" id="trigger-bottom">
-        <div class="col-12 welcome">
+        <div class="col-12 welcome" *ngIf="display_msg != 'null'">
             <div class="underline-aff">
-                <h1 class="wtext">
-                    WelCome
+                <h1 class="wtext" >
+                    {{display_msg}}
                 </h1>
+
+                
             </div>
             
+        </div>
+
+        <div class="col-12 intro"  *ngIf="display_msg === 'null'">
+            <div class="underline-aff">
+                <p class="intro-text">
+                    Hi,This is Mouli <br>
+                    A "MEAN" Developer.
+                </p>
+            </div>
         </div>
     </div>
 
 
-    <div class="row min-vh-100" id="hov-eff-about"data-aos="flip-left" data-aos-delay="500" data-aos-anchor="#trigger-bottom" data-aos-anchor-placement="bottom-center" >
        
+    <div class="row min-vh-100" id="hov-eff-about"data-aos="flip-left" data-aos-delay="500" data-aos-anchor="#trigger-bottom" data-aos-anchor-placement="bottom-center" >
+        <!-- <div class="col-12"> -->
+            <!-- <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul> -->
+        <!-- </div> -->
         <div class="col-12 col-xl-4 img-col">
 
             <div class="center-div">
@@ -36,7 +63,7 @@
                     - Sai Mouli Bandari
                 </div>
             </div>
-              
+                
         </div>
     </div>
 </div>

@@ -1,0 +1,79 @@
+<div class="container-lg resume-margin">
+    <div class="row">
+        <div class="row about-section">
+            <div class="col-8">
+                <div class="details">
+                    <ul>
+                        <li>
+                            <h2>
+                                {{ my.about.name }} <br>
+                                {{ my.about.surname }}
+                            </h2>
+                        </li>
+                        
+                        <li>
+                            <h4>{{ my.about.designation }}</h4>
+                        </li>
+
+                        <li *ngFor="let contact of my.about.contacts" class="{{ contact.type }}">
+                            <span>{{ contact.data }} </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="outer-profile">
+                    <div class="inner-profile">
+                        <img src="../../assets/no-profile-pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bio">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-12 intro">
+                        <p>
+                            {{ my.about.bio }}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="work-exp">
+                        <li>
+                            <h3>Work Experience</h3>
+                        </li>
+                        <li *ngFor="let exp of my.work_exp">
+                            <h4>{{ exp.tag }}</h4>
+                            <h6>{{ exp.period }} | {{ exp.company }}</h6>
+                            <p>{{ exp.work }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5">
+                <ul>
+                    <li>
+                        <h3>Education</h3>
+                    </li>
+                    <li *ngFor="let edu of my.education">
+                        <h4>{{ edu.degree }}</h4>
+                        <h6>{{ edu.peroid }} | {{ edu.insitute }}</h6>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h3>Personal Skills</h3>
+                    </li>
+                    <li *ngFor="let skill of my.personal_skill">
+                        <h5>{{ skill.name }}</h5>
+                        <fa-icon [icon]="star" *ngFor="let i of startsArray(skill.rating)"></fa-icon>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
