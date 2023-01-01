@@ -1,0 +1,78 @@
+.options-button {
+  background-color: cadetblue;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  width: 250px;
+  height: 325px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.071);
+  background-color: aliceblue;
+  color: black;
+  border-radius: 20px;
+  .header {
+    height: 60px;
+    background-color: cadetblue;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    .profile {
+      margin: 0 5px 0 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: aqua;
+    }
+
+    .close-div {
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      transform: translateX(10px) translateY(-10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      fa-icon {
+        color: white;
+      }
+    }
+
+
+    
+  }
+
+  div.welcome-text{
+    text-align: right;
+    margin-right: 5px;
+  }
+
+  .options-ul {
+    display: flex;
+    justify-content: flex-end;
+    
+    li.option {
+      width: 100px;
+      height: 25px;
+      background-color: rgba(182, 252, 229, 0.781);
+      border-radius: 20px;
+      margin: 8px 5px 8px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}

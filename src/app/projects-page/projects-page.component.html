@@ -1,37 +1,40 @@
 <div class="container-xl">
-    <div class="row">
-        <div class="col-carosel col-12 carosel-col">
-            <div class="carosel-div">
-                <div class="carosel-image-div">
-                      <!-- <div > -->
-                        <img src="../../assets/1.jpg" id="img-1" data-aos-anchor="#img-2" data-aos="zoom-out" data-aos-delay="500" data-aos-anchor-placement="top-center">
-                      <!-- </div>
-                      <div > -->
+  <div class="row">
+    <div class="col-carosel col-12 carosel-col">
+      <div class="carosel-div">
+        <div class="carosel-image-div">
+          <!-- <img src="../../assets/1.jpg" id="img-1" data-aos-anchor="#img-2" data-aos="zoom-out" data-aos-delay="500" data-aos-anchor-placement="top-center">
+        
                         <img src="../../assets/2.gif" id="img-2" data-aos-anchor="#img-3"data-aos="zoom-out" data-aos-delay="500" data-aos-anchor-placement="top-center">
-                      <!-- </div>
-                      <div id="img-3"> -->
+                      
                         <img src="../../assets/3.jpg.webp" id="img-3" data-aos-anchor="#img-2" data-aos="zoom-out" data-aos-delay="500" data-aos-anchor-placement="top-center">
-                      <!-- </div>  -->
-                       
-                       
-                </div>
-            </div>
+                      -->
 
-            <div class="carosel-botton">
-                <div class="button-group">
-                     <button (click)="goDown('img-1')" type="button" class="btn btn-light"></button>
-                     <button (click)="goDown('img-2')" type="button" class="btn btn-light"></button>
-                     <button (click)="goDown('img-3')"  type="button" class="btn btn-light"></button>
-                </div>
-                
-            </div>
+          <img
+            *ngFor="let project of projectArray"
+            src="{{ project.display_pic }}"
+            id="{{ project.tag }}"
+          />
         </div>
+      </div>
 
-
-        <div class="col-disp-area col-12">
-            <div class="disp-div">
-
-            </div>
+      <div class="carosel-botton">
+        <div class="button-group">
+          <button
+            *ngFor="let project of projectArray"
+            [ngClass]="{ active: isActive(project.tag) }"
+            (click)="goDown(project.tag, project)"
+            type="button"
+            class="btn btn-light"
+          ></button>
         </div>
+      </div>
     </div>
+
+    <div class="col-disp-area col-12">
+      <div class="disp-div" [innerHTML]="projectDiscriction" style="color:white">
+        
+      </div>
+    </div>
+  </div>
 </div>

@@ -15,7 +15,7 @@ export const myData = {
             },
             {
                 "type" : "phone",
-                "data" : "+91-8985521158"
+                "data" : "+918985521158"
             }
         ],
         "bio" : `I am a software developer with good problem-solving skills and a proven 
@@ -31,7 +31,7 @@ export const myData = {
         {
             "degree" : "Intermediate",
             "domain" : "MPC",
-            "insitute" : "Sri Gayatri Junior Collge",
+            "insitute" : "Sri Gayatri Junior College",
             "peroid" : "2016-2018"
         }, 
         {

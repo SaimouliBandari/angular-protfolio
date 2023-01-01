@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
@@ -12,6 +13,20 @@ import * as AOS from 'aos';
 export class AppComponent {
   title = 'angular_port';
 
+  optionsList = [
+    {
+      "name" : "whatsapp"
+    },
+    {
+      "name" : "phone"
+    },{
+      "name" : "email"
+    },{
+      "name" : "linkedIn"
+    }
+  ];
+
+  name = "Sai Mouli";
   
   constructor(private modalService: NgbModal) {
  

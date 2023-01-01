@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { BlankPageComponent } from './blank-page/blank-page.component';
+import { projects } from './projects';
 
 const routes: Routes = [
   {
     path : '',
-    component: MainPageComponent
+    component: MainPageComponent,
   },
   {
     path : 'home', 
@@ -16,7 +17,14 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    component: ProjectsPageComponent
+    component: ProjectsPageComponent,
+    data : {
+      "projects" : projects,
+      "data" : {
+        "name" : "saimouli"
+      }
+    }
+    
   },{
     path: 'service',
     component: BlankPageComponent

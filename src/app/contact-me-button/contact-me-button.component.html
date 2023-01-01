@@ -1,0 +1,31 @@
+<div class="options" *ngIf="clickedOptions">
+  <div class="header">
+    <div class="profile"></div>
+    <div class="name">
+      {{ profileName }}
+    </div>
+    <div class="close-div">
+      <a class="close" (click)="displayContactBtn()">
+        <fa-icon class="icon" [icon]="closeIcon" size="lg"></fa-icon>
+      </a>
+    </div>
+  </div>
+  <div class="body">
+    <div class="welcome-text">
+      <p>
+        Hi <br />
+       feel free to reach me at.
+      </p>
+      <ul class="options-ul">
+        <div>
+          <li *ngFor="let option of options" class="option">
+            <a>{{ option.name }}</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="options-button" *ngIf="displayButton">
+  <a (click)="onClickOption()">Contact</a>
+</div>

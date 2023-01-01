@@ -1,5 +1,5 @@
 import { icons } from './icons';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Location } from '@angular/common';
 @Component({
@@ -8,9 +8,9 @@ import { Location } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  @ViewChild('nav') nav: Element | undefined;
   fa_bars =faBars;
   icons = icons;
+
 
   constructor(private location : Location) { }
 
