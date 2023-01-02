@@ -5,10 +5,10 @@ export const icons =[
         "icon" : faHome,
         "name" : "Home"
     },
-    {
-        "icon" : faHandshake,
-        "name" : "Service"
-    },
+    // {
+    //     "icon" : faHandshake,
+    //     "name" : "Service"
+    // },
     {
         "icon" : faProjectDiagram,
         "name" : "Projects"
