@@ -45,7 +45,7 @@
             <div class="center-div">
                 <img src="../../assets/profile.jpg" alt="profile">
                 <div class="h4-text">
-                    <h4 class="ms-auto me-auto mt-3">Sai Mouli Bandari</h4>
+                    <h4 class="ms-auto me-auto mt-3">{{details?.name}}</h4>
                 </div>
             </div>
             
@@ -53,14 +53,15 @@
         <div class="col-12 col-xl-8 img-col">
             <div class="center-div-abt">
                 <p>
-                    Mouli is an aspiring and visonary individual currently pursuing his graduation 
+                    <!-- Mouli is an aspiring and visonary individual currently pursuing his graduation 
                     in Electronic and Communication at Raghu Engineering College from city 
                     of Desitiny - Visakhapatnam.He is a fast learner and software developer
                     enthusiast and loves building project.  
-                                                        
+                                                         -->
+                    {{details?.profile_data}}
                 </p>      
                 <div style="right: 0%; left: auto;">
-                    - Sai Mouli Bandari
+                    - {{details?.name}}
                 </div>
             </div>
                 

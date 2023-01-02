@@ -2,7 +2,7 @@ export const projects = [
     {
         "name": "",
         "tag" : "img-1",
-        "display_pic": "../../assets/1.jpg",
+        "display_pic": "../../assets/static-page.png",
         "about": `<ul>
         <li>
           <h4>Static Portfolio</h4>
@@ -64,7 +64,7 @@ export const projects = [
     {
         "name": "",
         "tag" : "img-4",
-        "display_pic": "",
+        "display_pic": "../../assets/minor.png",
         "about": ""
     },
     {
