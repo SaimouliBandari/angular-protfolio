@@ -11,7 +11,6 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { BlankPageComponent } from './blank-page/blank-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactMeButtonComponent } from './contact-me-button/contact-me-button.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,7 @@ import { ContactMeButtonComponent } from './contact-me-button/contact-me-button.
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   

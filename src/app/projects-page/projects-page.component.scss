@@ -38,7 +38,7 @@
     img{
         margin: 0% 1%;
         width: 85vw;
-        max-height: 50vh;
+        max-height: 60vh;
     }
 
     img:first-child{
@@ -75,7 +75,7 @@
 }
 
 .col-disp-area{
-    min-height:calc(40vh - 10px) !important;
+    min-height:calc(25) !important;
     height:fit-content;
    // background-color: aliceblue;
 }
